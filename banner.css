@@ -1,0 +1,30 @@
+
+.banner {
+  position: relative;
+  background-image: url('blue banner.jpg'); /* Update path as needed */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.banner-text {
+  color: rgb(0, 0, 0); /* Consider switching to white if banner is dark */
+  font-weight: bolder;
+  text-transform: uppercase;
+  user-select: none;
+  line-height: 1.1;
+  padding: 20px;
+}
+
+.banner-text .current {
+  font-size: 40px;
+}
+
+.banner-text .exhibition {
+  font-size: 40px;
+  margin-left: 40px;
+}
