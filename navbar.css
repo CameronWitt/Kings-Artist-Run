@@ -4,8 +4,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 40px;
-  background-color: #ffffff;
-  font-weight: 300;
+  background-color: #ececec;
+  font-weight: 700;
 }
 
 .nav-left .logo,
@@ -13,19 +13,22 @@
   height: 40px;
 }
 
-.nav-center {
-  display: flex;
-  gap: 80px;
-}
-
 .navbar a {
   text-decoration: none;
   color: #000000;
-  font-size: 16px;
   transition: color 0.2s ease;
 }
 
-.navbar a:hover {
-  color: #1087c7;
-  font-weight: 900;
+.nav-center a {
+  border-radius: 90px;            /* rounds the edges */
+  transition: background-color 0.3s ease; /* smooth hover effect */
+  text-decoration: none;         /* optional, removes underline */
+  color: black;                  /* preserve text color */
+  padding: 35px;
+}
+
+
+.nav-center a:hover {
+  background-color: rgba(255, 255, 255, 0.793); /* white background on hover */
+  
 }
