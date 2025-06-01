@@ -11,17 +11,22 @@
   justify-content: flex-start;
 }
 
-.banner-text {
+.banner-text a {
   color: rgb(0, 0, 0); /* Consider switching to white if banner is dark */
-  font-weight: 300;
+  font-weight: 700;
   user-select: none;
-  line-height: 1.1;
-  padding: 20px;
+  line-height: 0.5;
+  padding: 10px;
   font-size: 40px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column; /* this stacks children vertically */
 }
 
-.banner-text .exhibition {
-  margin-left: 40px;
+.banner-text a:hover {
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.2s ease;
 }
 
 .banner-text a:hover {
