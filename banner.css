@@ -9,13 +9,15 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  opacity: 60%;
+  transition: opacity 0.3s ease;
 }
 
-.banner-text a {
+.banner-text {
   color: rgb(0, 0, 0); /* Consider switching to white if banner is dark */
   font-weight: 700;
-  padding: 20px;
-  font-size: 70px;
+  padding: 10px;
+  font-size: 50px;
   text-decoration: none;
   display: flex;
   flex-direction: column; /* this stacks children vertically */
@@ -24,6 +26,6 @@
   text-decoration: none;         /* optional, removes underline */
 }
 
-.banner-text a:hover {
-  background-color: rgba(255, 255, 255, 0.721); /* white background on hover */
+.banner:hover {
+opacity: 100%;
 }
