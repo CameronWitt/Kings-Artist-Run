@@ -4,9 +4,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 40px;
-  background-color: #f4f4f4;
-  border-bottom: 1px solid #ddd;
-  font-weight: bolder;
+  background-color: #ffffff;
+  font-weight: 300;
 }
 
 .nav-left .logo,
@@ -19,13 +18,14 @@
   gap: 80px;
 }
 
-.nav-center a {
+.navbar a {
   text-decoration: none;
-  color: #333;
+  color: #000000;
   font-size: 16px;
   transition: color 0.2s ease;
 }
 
-.nav-center a:hover {
-  color: #d10000;
+.navbar a:hover {
+  color: #1087c7;
+  font-weight: 900;
 }
