@@ -1,60 +1,75 @@
 .future-exhibition {
   position: relative;
-  height: 500px; /* adjust as needed */
+  height: 720px; /* adjust as needed */
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 60px 0;
+  background-color: #ececec;
 }
 
+/* Text hover behavior (already exists, just adding transition) */
 .center-text {
   position: relative;
-  font-size: 48px;
+  font-size: 130px;
   font-weight: bolder;
   transform: rotate(-15deg);
   z-index: 2;
   user-select: none;
+  opacity: 60%;
+  transition: opacity 0.3s ease;
+}
+
+.center-text:hover {
+  opacity: 100%;
 }
 
 .floating-images {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 400px;
-  height: 400px;
+  width: 1100px;
+  height: 500px;
   transform: translate(-50%, -50%);
-  pointer-events: none; /* so images don't interfere with interaction */
+  pointer-events: none; /* this disables container interaction */
 }
 
 .floating-images img {
   position: absolute;
-  width: 100px; /* adjust size */
+  width: 40%;
   transform-origin: center;
   user-select: none;
+  opacity: 50%;
+  transition: opacity 0.3s ease;
+  pointer-events: auto; /* re-enable hover on images */
+  z-index: 3; /* make sure they're above background */
+}
+
+.floating-images img:hover {
+  opacity: 100%;
 }
 
 /* Position each image at 90° intervals around center, angled */
 
 .floating-images img:nth-child(1) {
-  top: 0;
-  left: 50%;
+  top: -20%;
+  left: 60%;
   transform: translateX(-50%) rotate(-10deg);
 }
 
 .floating-images img:nth-child(2) {
-  top: 50%;
-  right: 0;
+  top: 70%;
+  right: -10%;
   transform: translateY(-50%) rotate(20deg);
 }
 
 .floating-images img:nth-child(3) {
-  bottom: 0;
+  bottom: -20%;
   left: 50%;
   transform: translateX(-50%) rotate(-5deg);
 }
 
 .floating-images img:nth-child(4) {
-  top: 50%;
-  left: 0;
+  top: 30%;
+  left: -5%;
   transform: translateY(-50%) rotate(15deg);
 }
