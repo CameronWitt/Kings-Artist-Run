@@ -1,37 +1,51 @@
-* --- Store Grid Layout --- */
+/* --- Store Grid Layout for 15 Images --- */
 .store-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(5, 1fr); /* 5 items per row */
+  gap: 40px; /* space between items */
   padding: 40px;
-  justify-items: center;
+  justify-items: center; /* center items in each column */
 }
 
 .artwork-item {
   width: 100%;
-  max-width: 200px;
+  max-width: 200px; /* Controls how big each square can get */
 }
 
 .artwork-item img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1 / 1; /* Ensures square shape */
   object-fit: cover;
   border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 /* --- Caption Styles --- */
 .caption {
   display: flex;
   justify-content: space-between;
-  margin-top: 8px;
+  margin-top: 10px;
   font-size: 14px;
+  gap: 10px;
 }
 
 .caption .left {
   text-align: left;
+  flex: 1;
 }
 
 .caption .right {
   text-align: right;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.artist-name,
+.piece-name {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.artist-name {
   font-weight: bold;
 }
