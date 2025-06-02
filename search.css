@@ -1,0 +1,13 @@
+/* --- Search Bar Styling --- */
+.search-container {
+  margin-top: 80px; /* Adjust based on sticky navbar height */
+  text-align: center;
+}
+
+.search-bar {
+  padding: 10px 20px;
+  width: 40%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
