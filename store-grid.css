@@ -9,7 +9,7 @@
 
 .artwork-item {
   width: 100%;
-  max-width: 200px; /* Controls how big each square can get */
+  max-width: 300px; /* Controls how big each square can get */
 }
 
 .artwork-item img {
