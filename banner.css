@@ -8,6 +8,7 @@
 .banner-img {
     width: 100%;
     opacity: 60%;
+    transition: opacity 0.3s ease;
 }
 
 .banner-text {
@@ -23,10 +24,34 @@
   z-index: 2;
 }
 
-.banner-text:hover {
+.banner-img:hover {
   opacity: 100%;
 }
 
-.banner-img:hover {
-  opacity: 100%;
+.banner-img img {
+  width: 100%;
+  opacity: 0.6; /* Moved opacity here */
+  display: block;
+}
+
+.banner-caption {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  text-align: right;
+  font-family: 'Inter', sans-serif;
+  border-radius: 4px;
+  z-index: 9;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.705);
+  padding: 5px 6px;
+}
+
+.banner-caption .artist {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.banner-caption .exhibition {
+  font-size: 1rem;
 }
