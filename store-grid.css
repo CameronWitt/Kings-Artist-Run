@@ -1,0 +1,37 @@
+* --- Store Grid Layout --- */
+.store-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  padding: 40px;
+  justify-items: center;
+}
+
+.artwork-item {
+  width: 100%;
+  max-width: 200px;
+}
+
+.artwork-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+/* --- Caption Styles --- */
+.caption {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.caption .left {
+  text-align: left;
+}
+
+.caption .right {
+  text-align: right;
+  font-weight: bold;
+}
