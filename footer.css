@@ -1,0 +1,34 @@
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 30px;
+  font-family: 'Inter', sans-serif;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 15px;
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+
+.footer-section.logos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-section.logos img {
+  height: 40px;
+  width: auto;
+}
