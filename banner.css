@@ -1,31 +1,32 @@
-
 .banner {
   position: relative;
-  background-image: url('blue banner.jpg'); /* Update path as needed */
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
+  text-align: left;
   height: 400px;
-  padding: 30px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  opacity: 60%;
-  transition: opacity 0.3s ease;
+}
+
+.banner-img {
+    width: 100%;
+    opacity: 60%;
 }
 
 .banner-text {
-  color: rgb(0, 0, 0); /* Consider switching to white if banner is dark */
+  color: rgb(0, 0, 0);
   font-weight: 700;
-  padding: 10px;
-  font-size: 50px;
+  padding-left: 30px;
+  padding-top: 30px;
+  font-size: 400%;
   text-decoration: none;
   display: flex;
-  flex-direction: column; /* this stacks children vertically */
-  border-radius: 90px;            /* rounds the edges */
-  transition: background-color 0.3s ease; /* smooth hover effect */
-  text-decoration: none;         /* optional, removes underline */
+  flex-direction: column;
+  position: absolute; 
+  z-index: 2;
 }
 
-.banner:hover {
-opacity: 100%;
+.banner-text:hover {
+  opacity: 100%;
+}
+
+.banner-img:hover {
+  opacity: 100%;
 }
