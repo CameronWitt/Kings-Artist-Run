@@ -6,7 +6,8 @@
   <title>Store</title>
   <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="navbar.css" />
-  <link rel="stylesheet" href="store.css" /> <!-- You can create this -->
+  <link rel="stylesheet" href="search.css" />
+  <link rel="stylesheet" href="store-grid.css" />
   <link rel="stylesheet" href="footer.css" />
 </head>
 <body>
@@ -28,6 +29,29 @@
     </a>
   </div>
 </nav>
+<!-- Search bar section -->
+<div class="search-container">
+  <input type="text" placeholder="Search artworks..." class="search-bar">
+</div>
+
+<!-- Store grid -->
+<div class="store-grid">
+  <!-- Example artwork item (repeat 15 times with different content) -->
+  <div class="artwork-item">
+    <img src="art1.jpg" alt="Artwork 1">
+    <div class="caption">
+      <div class="left">
+        <p class="artist-name">Artist Name</p>
+        <p class="piece-name">Piece Title</p>
+      </div>
+      <div class="right">
+        <p class="price">$150</p>
+      </div>
+    </div>
+  </div>
+  <!-- Add 14 more .artwork-item divs here -->
+</div>
+
 <footer class="site-footer">
   <div class="footer-section">
     <h4>LOCATION</h4>
