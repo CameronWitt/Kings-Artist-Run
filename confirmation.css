@@ -13,3 +13,28 @@
   width: 250px;
   height: auto;
 }
+
+.return-store-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto 0; /* space above, centered horizontally */
+  font-size: 1.2rem;
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.return-store-link:hover {
+  color: #000000;
+  font-weight: bold;
+}
+
+.return-store-link .return-icon {
+  width: 20px;     /* size of the icon */
+  height: 20px;
+  margin-right: 8px;  /* space between icon and text */
+  display: inline-block;
+}
