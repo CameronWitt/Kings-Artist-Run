@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cart – Kings Artist Run</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-left">
+    <a href="Home.html" class="nav-link">
+      <img src="kings logo.png" alt="Logo" class="logo">
+    </a>
+  </div>
+  <div class="nav-center">
+    <a href="store.html" class="nav-link">STORE</a>
+    <a href="#exhibitions" class="nav-link">EXHIBITIONS</a>
+    <a href="#apply" class="nav-link">APPLY</a>
+    <a href="#about" class="nav-link">ABOUT</a>
+  </div>
+  <div class="nav-right">
+    <a href="cart.html" class="nav-link">
+      <img src="cart.png" alt="Cart" class="cart-icon">
+    </a>
+  </div>
+</nav>
+
+<!-- CART SECTION -->
+<section class="cart-page">
+  <!-- LEFT: Input fields -->
+  <div class="cart-left">
+    <h2>Delivery Information</h2>
+    <input type="text" placeholder="Full Name" required>
+    <input type="text" placeholder="Address" required>
+    <input type="text" placeholder="City" required>
+    <input type="text" placeholder="Postcode" required>
+    <input type="email" placeholder="Email Address" required>
+
+    <h2>Payment Details</h2>
+    <input type="text" placeholder="Card Number" required>
+    <input type="text" placeholder="Expiry Date (MM/YY)" required>
+    <input type="text" placeholder="CVV" required>
+
+    <button class="purchase-button">Purchase</button>
+  </div>
+
+  <!-- Vertical Divider -->
+  <div class="divider"></div>
+
+  <!-- RIGHT: Cart summary -->
+  <div class="cart-right">
+    <div class="cart-item">
+      <img src="product-square.jpg" alt="Fractured">
+      <div class="item-info">
+        <div class="item-name">Fractured</div>
+        <div class="item-artist">by Chloe Hart</div>
+      </div>
+      <div class="item-price">$180.00 AUD</div>
+    </div>
+
+    <hr class="total-divider">
+
+    <div class="cart-total">
+      <span>Total:</span>
+      <strong>$180.00 AUD</strong>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-section">
+    <h4>LOCATION</h4>
+    <p>69 Capel Street</p>
+    <p>West Melbourne 3003</p>
+  </div>
+  <div class="footer-section">
+    <h4>CONTACT</h4>
+    <p>info@kingsartistrun.org.au</p>
+  </div>
+  <div class="footer-section">
+    <h4>OPENING HOURS</h4>
+    <p>Thursday to Sunday</p>
+    <p>12:00 PM to 5:00 PM</p>
+  </div>
+  <div class="footer-section logos">
+    <img src="insta.png" alt="Instagram" />
+    <img src="fb.png" alt="Facebook" />
+    <img src="tiktok.png" alt="TikTok" />
+  </div>
+</footer>
+
+</body>
+</html>
