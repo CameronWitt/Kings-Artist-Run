@@ -1,7 +1,7 @@
 .product-container {
   display: flex;
   flex-wrap: wrap;
-  padding: 50px 10%;
+  padding: 60px 15%;
   gap: 40px;
   align-items: flex-start;
 }
@@ -22,13 +22,14 @@
   flex: 1 1 300px;
 }
 
-.product-details h1 {
+.product-details .product-name {
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .product-details .artist {
-  font-weight: bold;
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 
