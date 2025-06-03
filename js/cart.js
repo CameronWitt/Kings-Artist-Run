@@ -1,19 +1,20 @@
-// js/cart.js
 document.addEventListener('DOMContentLoaded', () => {
   const cartRight = document.querySelector('.cart-right');
   const purchaseButton = document.querySelector('.purchase-button');
 
   if (cartRight) {
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
     cartRight.innerHTML = '';
 
     let totalPrice = 0;
 
-    cart.forEach(item => {
+    cart.forEach((item, index) => {
       const itemDiv = document.createElement('div');
       itemDiv.className = 'cart-item';
 
+      // Add a remove button 'x' for each item
       itemDiv.innerHTML = `
+        <button class="remove-item" title="Remove item">&times;</button>
         <img src="${item.image}" alt="${item.name}">
         <div class="item-info">
           <div class="item-name">${item.name}</div>
@@ -26,6 +27,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const priceNum = parseFloat(item.price.replace(/[^\d.-]/g, ''));
       totalPrice += priceNum;
+
+      // Attach click listener for removing this item
+      itemDiv.querySelector('.remove-item').addEventListener('click', () => {
+        // Remove item from cart array by index
+        cart.splice(index, 1);
+        // Update localStorage
+        localStorage.setItem('cart', JSON.stringify(cart));
+        // Re-render cart
+        // A simple way is to reload the page or re-run this function
+        location.reload();
+      });
     });
 
     if (cart.length === 0) {
