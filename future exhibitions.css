@@ -32,7 +32,6 @@
   width: 34%;
   transform-origin: center;
   user-select: none;
-  opacity: 30%;
   transition: opacity 0.3s ease;
   pointer-events: auto; /* re-enable hover on images */
   z-index: 3; /* make sure they're above background */
@@ -87,7 +86,7 @@
 
 .image-container img {
   width: 100%;
-  opacity: 40%;
+  opacity: 60%;
   transition: opacity 0.3s ease;
   display: block;
 }
