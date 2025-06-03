@@ -1,0 +1,15 @@
+.confirmation-container {
+  text-align: center;
+  padding: 100px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.confirmation-container h1 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.tick-image {
+  width: 250px;
+  height: auto;
+}
