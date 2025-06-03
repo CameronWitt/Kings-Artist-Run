@@ -28,6 +28,8 @@
 }
 
 .purchase-button {
+  display: inline-block;
+  text-align: center;
   margin-top: 20px;
   padding: 12px;
   background-color: black;
@@ -36,13 +38,15 @@
   border: none;
   cursor: pointer;
   border-radius: 20px;
-  width: 300px;
+  text-decoration: none;
+  width: 350px;
   align-self: center;
 }
 
 .purchase-button:hover {
   background-color: #333;
 }
+
 
 /* Divider */
 .divider {
@@ -124,5 +128,4 @@
 
 .return-icon {
   width: 25px;
-  height: 25px;
 }
