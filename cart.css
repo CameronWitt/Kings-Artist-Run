@@ -1,0 +1,105 @@
+.cart-page {
+  display: flex;
+  padding: 60px 10%;
+  gap: 40px;
+  min-height: 70vh;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* Left: Form Section */
+.cart-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cart-left h2 {
+  margin-top: 20px;
+  font-size: 1.3rem;
+}
+
+.cart-left input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.purchase-button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.purchase-button:hover {
+  background-color: #333;
+}
+
+/* Divider */
+.divider {
+  width: 1px;
+  background-color: #ccc;
+  height: 100%;
+  align-self: stretch;
+}
+
+/* Right: Cart Summary */
+.cart-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cart-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+.item-info {
+  flex-grow: 1;
+}
+
+.item-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.item-artist {
+  font-size: 1rem;
+  color: #555;
+}
+
+.item-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Total Section */
+.total-divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 0;
+}
+
+.cart-total {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
