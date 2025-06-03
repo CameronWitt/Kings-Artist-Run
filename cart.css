@@ -129,3 +129,28 @@
 .return-icon {
   width: 25px;
 }
+
+.cart-item {
+  position: relative;
+  padding-left: 25px; /* leave space for remove button */
+  margin-bottom: 15px;
+}
+
+.remove-item {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #900;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.remove-item:hover {
+  color: #f00;
+}
