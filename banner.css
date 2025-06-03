@@ -30,7 +30,6 @@
 
 .banner-img img {
   width: 100%;
-  opacity: 0.6; /* Moved opacity here */
   display: block;
 }
 
