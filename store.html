@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kings Artist Run > Store</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="search.css" />
+  <link rel="stylesheet" href="store-grid.css" />
+  <link rel="stylesheet" href="footer.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html" class="nav-link">
+        <img src="kings logo.png" alt="Logo" class="logo" />
+      </a>
+    </div>
+    <div class="nav-center">
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <div class="nav-links">
+        <a href="store.html" class="nav-link">STORE</a>
+        <a href="#exhibitions" class="nav-link">EXHIBITIONS</a>
+        <a href="#apply" class="nav-link">APPLY</a>
+        <a href="#about" class="nav-link">ABOUT</a>
+      </div>
+    </div>
+
+    <div class="nav-right">
+      <a href="cart.html" class="nav-link">
+        <img src="cart.png" alt="Cart" class="cart-icon" />
+      </a>
+    </div>
+  </nav>
+
+  <!-- Search bar section -->
+  <div class="search-container">
+    <input
+      type="text"
+      placeholder="Search artworks..."
+      class="search-bar"
+      id="searchInput"
+    />
+  </div>
+
+  <!-- Store grid -->
+  <div class="store-grid">
+    <div class="artwork-item">
+      <a href="whispers.html">
+        <img src="store/whispers.jpg" alt="Artwork 1" />
+      </a>
+      <div class="caption">
+        <div class="left">
+          <p class="artist-name">Alice Grey</p>
+          <p class="piece-name">Whispers</p>
+        </div>
+        <div class="right">
+          <p class="price">$120</p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="noResultsMessage"
+      style="display:none; text-align:center; margin-top:20px;"
+    >
+      No artworks found.
+    </div>
+
+    <div class="artwork-item">
+      <a href="blue-haze.html">
+        <img src="Store/blue-haze.jpg" alt="Artwork 2" />
+      </a>
+      <div class="caption">
+        <div class="left">
+          <p class="artist-name">Ben Waters</p>
+          <p class="piece-name">Blue Haze</p>
+        </div>
+        <div class="right">
+          <p class="price">$300</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="artwork-item">
+      <a href="fractured.html">
+        <img src="Store/fractured.jpg" alt="Artwork 3" />
+      </a>
+      <div class="caption">
+        <div class="left">
+          <p class="artist-name">Chloe Hart</p>
+          <p class="piece-name">Fractured</p>
+        </div>
+        <div class="right">
+          <p class="price">$180</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="artwork-item">
+      <a href="midnight-bloom.html">
+        <img src="Store/midnight-bloom.jpg" alt="Artwork 4" />
+      </a>
+      <div class="caption">
+        <div class="left">
+          <p class="artist-name">Daniel Sun</p>
+          <p class="piece-name">Midnight Bloom</p>
+        </div>
+        <div class="right">
+          <p class="price">$250</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="artwork-item">
+      <a href="aurora.html">
+        <img src="Store/aurora.jpg" alt="Artwork 5" />
+      </a>
+      <div class="caption">
+        <div class="left">
+          <p class="artist-name">Ella Stone</p>
+          <p class="piece-name">Aurora</p>
+        </div>
+        <div class="right">
+          <p class="price">$400</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="artwork-item">
+      <a href="dawn-light.html">
+        <img src="Store/dawn-light.jpeg" alt="Artwork 6" />
+      </a>
+      <div class="caption">
+        <div class="left">
+          <p class="artist-name">Felix Moon</p>
+          <p class="piece-name">Dawn Light</p>
+        </div>
+        <div class="right">
+          <p class="price">$145</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="artwork-item">
+      <a href="the-watchers.html">
+        <img src="Store/the-watchers.jpg" alt="Artwork 7" />
+      </a>
+      <div class="caption">
+        <div class="left">
+          <p class="artist-name">Grace Lee</p>
+          <p class="piece-name">The Watchers</p>
+        </div>
+        <div class="right">
+          <p class="price">$320</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="artwork-item">
+      <a href="void.html">
+        <img src="Store/void.jpg" alt="Artwork 8" />
+      </a>
+      <div class="caption">
+        <div class="left">
+          <p class="artist-name">Harry Wells</p>
+          <p class="piece-name">Void</p>
+        </div>
+        <div class="right">
+          <p class="price">$275</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="artwork-item">
+      <a href="ocean-drift.html">
+        <img src="Store/ocean-drift.jpg" alt="Artwork 9" />
+      </a>
+      <div class="caption">
+        <div class="left">
+          <p class="artist-name">Isla Brook</p>
+          <p class="piece-name">Ocean Drift</p>
+        </div>
+        <div class="right">
+          <p class="price">$190</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="artwork-item">
+      <a href="fragments.html">
+        <img src="Store/fragments.jpg" alt="Artwork 10" />
+      </a>
+      <div class="caption">
+        <div class="left">
+          <p class="artist-name">Jack Rivers</p>
+          <p class="piece-name">Fragments</p>
+        </div>
+        <div class="right">
+          <p class="price">$210</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="artwork-item">
+      <a href="still-flame.html">
+        <img src="Store/still-flame.jpg" alt="Artwork 11" />
+      </a>
+      <div class="caption">
+        <div class="left">
+          <p class="artist-name">Kira Vale</p>
+          <p class="piece-name">Still Flame</p>
+        </div>
+        <div class="right">
+          <p class="price">$140</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="artwork-item">
+      <a href="mosaic.html">
+        <img src="Store/mosaic.jpg" alt="Artwork 12" />
+      </a>
+      <div class="caption">
+        <div class="left">
+          <p class="artist-name">Leo Stone</p>
+          <p class="piece-name">Mosaic</p>
+        </div>
+        <div class="right">
+          <p class="price">$225</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="artwork-item">
+      <a href="echoes.html">
+        <img src="Store/echoes.jpg" alt="Artwork 13" />
+      </a>
+      <div class="caption">
+        <div class="left">
+          <p class="artist-name">Mila Hayes</p>
+          <p class="piece-name">Echoes</p>
+        </div>
+        <div class="right">
+          <p class="price">$260</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="artwork-item">
+      <a href="cinder.html">
+        <img src="Store/cinder.jpeg" alt="Artwork 14" />
+      </a>
+      <div class="caption">
+        <div class="left">
+          <p class="artist-name">Nico Frost</p>
+          <p class="piece-name">Cinder</p>
+        </div>
+        <div class="right">
+          <p class="price">$330</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="artwork-item">
+      <a href="gravity.html">
+        <img src="Store/gravity.jpg" alt="Artwork 15" />
+      </a>
+      <div class="caption">
+        <div class="left">
+          <p class="artist-name">Olivia Park</p>
+          <p class="piece-name">Gravity</p>
+        </div>
+        <div class="right">
+          <p class="price">$280</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <footer class="site-footer">
+    <div class="footer-section">
+      <h4>LOCATION</h4>
+      <p>69 Capel Street</p>
+      <p>West Melbourne 3003</p>
+    </div>
+    <div class="footer-section">
+      <h4>CONTACT</h4>
+      <p>info@kingsartistrun.org.au</p>
+    </div>
+    <div class="footer-section">
+      <h4>OPENING HOURS</h4>
+      <p>Thursday to Sunday</p>
+      <p>12:00 PM to 5:00 PM</p>
+    </div>
+    <div class="footer-section logos">
+      <img src="insta.png" alt="Logo 1" />
+      <img src="fb.png" alt="Logo 2" />
+      <img src="tiktok.png" alt="Logo 3" />
+    </div>
+  </footer>
+
+  <script src="js/navbar.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>
