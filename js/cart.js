@@ -80,3 +80,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+document.querySelectorAll('.info-toggle').forEach(button => {
+  button.addEventListener('click', () => {
+    const content = button.nextElementSibling;
+    const expanded = button.getAttribute('aria-expanded') === 'true';
+    
+    button.setAttribute('aria-expanded', !expanded);
+    button.textContent = button.textContent.replace(expanded ? '▲' : '▼', expanded ? '▼' : '▲');
+    
+    content.classList.toggle('open');
+  });
+});
