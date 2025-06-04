@@ -54,3 +54,43 @@
 .banner-caption .exhibition {
   font-size: 1rem;
 }
+
+@media (max-width: 768px) {
+  .banner-text {
+    font-size: 8vw;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  .banner-caption {
+    font-size: 0.9rem;
+    right: 10px;
+    bottom: 10px;
+    padding: 4px 5px;
+  }
+
+  .banner-caption .artist {
+    font-size: 1rem;
+  }
+
+  .banner-caption .exhibition {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    height: auto;
+  }
+
+  .banner-text {
+    font-size: 7vw;
+    padding-top: 15px;
+  }
+
+  .banner-caption {
+    background-color: rgba(255, 255, 255, 0.9);
+    right: 5px;
+    bottom: 5px;
+  }
+}

@@ -1,36 +1,43 @@
 .future-exhibition {
   position: relative;
   height: 770px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #ffffff;
+  text-align: center;
+  padding-top: 40px;
+  overflow: hidden;
 }
 
 .center-text {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 400%;
   font-weight: bolder;
-  z-index: 2;
+  z-index: 10; /* Ensure it's on top of image elements */
   user-select: none;
+  background-color: rgba(255, 255, 255, 0.7); /* Backdrop for legibility */
+  padding: 0.2em 0.5em;
+  border-radius: 6px;
 }
 
 .floating-images {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  transform: translate(-50%, -50%);
   pointer-events: none;
+  z-index: 1;
 }
 
-/* Common container settings */
 .image-container {
   position: absolute;
-  width: clamp(120px, 28vw, 300px);
+  width: clamp(100px, 24vw, 260px);
+  max-width: 90vw;
   pointer-events: auto;
-  z-index: 3;
+  z-index: 2;
+  transition: all 0.3s ease;
 }
 
 .image-container img {
@@ -39,13 +46,38 @@
   opacity: 0.6;
   transition: opacity 0.3s ease;
   user-select: none;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
 }
 
 .image-container img:hover {
   opacity: 1;
 }
 
-/* Image positions + rotations */
+/* Captions always over images */
+.caption {
+  position: absolute;
+  color: black;
+  font-family: 'Inter', sans-serif;
+  background-color: rgba(255, 255, 255, 0.705);
+  padding: 5px 6px;
+  z-index: 5; /* Always higher than image */
+  border-radius: 4px;
+  max-width: 90%;
+  top: 5px;
+  left: 5px;
+}
+
+.caption .artist {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.caption .exhibition {
+  font-size: 1rem;
+}
+
 .img1 {
   top: 8%;
   left: 57%;
@@ -70,20 +102,55 @@
   transform: translateY(-50%) rotate(15deg);
 }
 
-.caption {
-  position: absolute;
-  color: black;
-  font-family: 'Inter', sans-serif;
-  background-color: rgba(255, 255, 255, 0.705);
-  padding: 5px 6px;
-  z-index: 5;
-}
+@media (max-width: 600px) {
+  .future-exhibition {
+    height: 900px;
+  }
 
-.caption .artist {
-  font-size: 1.1rem;
-  font-weight: bold;
-}
+  .center-text {
+    font-size: 200%;
+    padding: 0.3em 0.6em;
+  }
 
-.caption .exhibition {
-  font-size: 1rem;
+  .image-container {
+    width: 65vw;
+  }
+
+  .img1 {
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%) rotate(-4deg);
+  }
+
+  .img2 {
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) rotate(6deg);
+  }
+
+  .img3 {
+    top: 52%;
+    left: 50%;
+    transform: translateX(-50%) rotate(-2deg);
+  }
+
+  .img4 {
+    top: 74%;
+    left: 50%;
+    transform: translateX(-50%) rotate(3deg);
+  }
+
+  .caption {
+    padding: 4px 6px;
+    top: 4px;
+    left: 4px;
+  }
+
+  .caption .artist {
+    font-size: 0.85rem;
+  }
+
+  .caption .exhibition {
+    font-size: 0.75rem;
+  }
 }
