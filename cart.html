@@ -38,24 +38,38 @@
 <!-- CART SECTION -->
 <section class="cart-page">
   <!-- LEFT: Input fields -->
-  <div class="cart-left">
-    <a href="store.html" class="return-link">
-  <img src="back.png" alt="Back" class="return-icon"> Return to Store
-</a>
-    <h2>Delivery Information</h2>
-    <input type="text" placeholder="Full Name" required>
-    <input type="text" placeholder="Address" required>
-    <input type="text" placeholder="City" required>
-    <input type="text" placeholder="Postcode" required>
-    <input type="email" placeholder="Email Address" required>
+<!-- LEFT: Input fields -->
+<div class="cart-left">
 
-    <h2>Payment Details</h2>
-    <input type="text" placeholder="Card Number" required>
-    <input type="text" placeholder="Expiry Date (MM/YY)" required>
-    <input type="text" placeholder="CVV" required>
+  <a href="store.html" class="return-link">
+    <img src="back.png" alt="Back" class="return-icon"> Return to Store
+  </a>
 
-    <a href="confirmation.html" class="purchase-button">Purchase</a>
+  <!-- Delivery Info Dropdown -->
+  <div class="info-section">
+    <button class="info-toggle" aria-expanded="false">Delivery Information ▼</button>
+    <div class="info-content">
+      <input type="text" placeholder="Full Name" required>
+      <input type="text" placeholder="Address" required>
+      <input type="text" placeholder="City" required>
+      <input type="text" placeholder="Postcode" required>
+      <input type="email" placeholder="Email Address" required>
+    </div>
   </div>
+
+  <!-- Payment Details Dropdown -->
+  <div class="info-section">
+    <button class="info-toggle" aria-expanded="false">Payment Details ▼</button>
+    <div class="info-content">
+      <input type="text" placeholder="Card Number" required>
+      <input type="text" placeholder="Expiry Date (MM/YY)" required>
+      <input type="text" placeholder="CVV" required>
+    </div>
+  </div>
+
+  <a href="confirmation.html" class="purchase-button">Purchase</a>
+</div>
+
 
   <!-- Vertical Divider -->
   <div class="divider"></div>
