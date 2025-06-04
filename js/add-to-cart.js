@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
       name: document.querySelector('.product-name').textContent,
       artist: document.querySelector('.artist').textContent,
       price: document.querySelector('.price').textContent,
-      image: document.querySelector('.product-image img').src
+      image: document.querySelector('.product-image img').src,
     };
 
     let cart = JSON.parse(localStorage.getItem('cart')) || [];

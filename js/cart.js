@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update localStorage
         localStorage.setItem('cart', JSON.stringify(cart));
         // Re-render cart
-        // A simple way is to reload the page or re-run this function
         location.reload();
       });
     });
@@ -85,10 +84,10 @@ document.querySelectorAll('.info-toggle').forEach(button => {
   button.addEventListener('click', () => {
     const content = button.nextElementSibling;
     const expanded = button.getAttribute('aria-expanded') === 'true';
-    
+
     button.setAttribute('aria-expanded', !expanded);
     button.textContent = button.textContent.replace(expanded ? '▲' : '▼', expanded ? '▼' : '▲');
-    
+
     content.classList.toggle('open');
   });
 });
