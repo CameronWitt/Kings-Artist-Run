@@ -1,6 +1,6 @@
 // js/add-to-cart.js
 document.addEventListener('DOMContentLoaded', () => {
-  const addToCartButton = document.querySelector('button');
+  const addToCartButton = document.querySelector('.price-button-row button');
 
   if (!addToCartButton) return; // Only run on product pages with the button
 
