@@ -54,3 +54,23 @@
 .artist-name {
   font-weight: bold;
 }
+
+@media (max-width: 768px) {
+  .store-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets and phones */
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .artwork-item {
+    max-width: 100%; /* let items fill the column width */
+  }
+}
+
+@media (max-width: 480px) {
+  .store-grid {
+    grid-template-columns: 1fr; /* single column on small phones */
+    gap: 15px;
+    padding: 15px;
+  }
+}
