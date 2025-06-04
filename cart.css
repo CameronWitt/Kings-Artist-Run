@@ -154,3 +154,60 @@
 .remove-item:hover {
   color: #f00;
 }
+
+/* Info Section Dropdown */
+.info-section {
+  margin-top: 20px;
+}
+
+.info-toggle {
+  background: none;
+  border: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-toggle:focus {
+  outline: 2px solid black;
+}
+
+.info-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.info-content.open {
+  max-height: 500px; /* big enough to show content */
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 768px) {
+  .cart-page {
+    flex-direction: column;
+    padding: 20px 5%;
+  }
+  .cart-right {
+    order: -1; /* show cart summary above the form */
+    margin-bottom: 30px;
+  }
+  .cart-left {
+    width: 100%;
+  }
+  .purchase-button {
+    width: 100%;
+  }
+  .divider {
+    display: none; /* hide vertical divider on small screens */
+  }
+}
